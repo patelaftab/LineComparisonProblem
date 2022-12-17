@@ -8,6 +8,7 @@ namespace LineComparisonProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Line Comparison Problem");
+            LineComaprison.ChekingLength();
             Console.ReadLine();
         }
     }
