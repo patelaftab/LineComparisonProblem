@@ -20,14 +20,18 @@ namespace LineComparisonProblem
             int b2 = Convert.ToInt32(Console.ReadLine());
             var Length2 = Math.Sqrt((Math.Pow(a1 - a2, 2) + Math.Pow(b1 - b2, 2)));
             Console.WriteLine("The Lenth Of the Line Is :" + Length2);
-            var result = Equals(Length1, Length2);
-            if (result== false)
+            int result = Length1.CompareTo(Length2);
+            if (result>0)
             {
-                Console.WriteLine("The Lines Are Not Equal");
+                Console.WriteLine("The Length Of Line1 is Greater Than Line2");
+            }
+            else if (result<0)
+            {
+                Console.WriteLine("The Lenght Of Line2 is Greater Than Line1");
             }
             else
             {
-                Console.WriteLine("The Lines Are Equal");
+                Console.WriteLine("Both Lines Are Equal");
             }
         }
     }
